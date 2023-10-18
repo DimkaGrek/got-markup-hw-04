@@ -486,7 +486,7 @@ nav {
     width: 360px;
     height: 300px;
     background-color: var(--IRIS);
-    transform: translateY(-100%);
+    transform: translateY(150%);
     transition: transform 300ms ease-in-out;
     padding-top: 40px;
     padding-right: 32px;
