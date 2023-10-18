@@ -48,29 +48,59 @@
   height: 32px;
   background-position: -672px 0;
 }
+.icon-cust-logo-1 {
+  width: 59px;
+  height: 32px;
+  background-position: 0 -48px;
+}
+.icon-cust-logo-2 {
+  width: 59px;
+  height: 32px;
+  background-position: -96px -48px;
+}
+.icon-cust-logo-3 {
+  width: 59px;
+  height: 32px;
+  background-position: -192px -48px;
+}
+.icon-cust-logo-4 {
+  width: 59px;
+  height: 32px;
+  background-position: -288px -48px;
+}
+.icon-cust-logo-5 {
+  width: 59px;
+  height: 32px;
+  background-position: -384px -48px;
+}
+.icon-cust-logo-6 {
+  width: 59px;
+  height: 32px;
+  background-position: -480px -48px;
+}
 .icon-diagram-1 {
   width: 32px;
   height: 32px;
-  background-position: -720px 0;
+  background-position: -576px -48px;
 }
 .icon-facebook-1 {
   width: 32px;
   height: 32px;
-  background-position: 0 -48px;
+  background-position: -624px -48px;
 }
 .icon-instagram-2 {
   width: 32px;
   height: 32px;
-  background-position: -48px -48px;
+  background-position: -672px -48px;
 }
 .icon-linkedin-1 {
   width: 32px;
   height: 32px;
-  background-position: -96px -48px;
+  background-position: -720px -48px;
 }
 .icon-twitter-1 {
   width: 32px;
   height: 32px;
-  background-position: -144px -48px;
+  background-position: 0 -96px;
 }
 

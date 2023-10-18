@@ -6,6 +6,7 @@
     --SLATE: #434455;
     --WHITE: #fff;
     --OCEAN: #404bbf;
+    --LIGHT-SLATE: #8e8f99;
 }
 
 body {
@@ -28,6 +29,8 @@ ol {
 }
 .list {
     list-style-type: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 h1,
@@ -90,8 +93,6 @@ nav {
     text-transform: uppercase;
     margin-right: 76px;
     text-decoration: none;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 .logo-part {
     color: var(--NAVY-BLUE);
@@ -105,6 +106,7 @@ nav {
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
+    transition-property: color;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -112,6 +114,11 @@ nav {
 }
 .menu-item {
     width: calc((100% - 80px) / 3);
+}
+.current {
+    color: var(--OCEAN);
+    border-bottom: 4px solid var(--OCEAN);
+    border-radius: 2px;
 }
 
 .address {
@@ -126,6 +133,7 @@ nav {
     letter-spacing: 0.02em;
     text-decoration: none;
     font-style: normal;
+    transition-property: color;
 }
 .address-info:hover,
 .address-info:focus {
@@ -140,9 +148,13 @@ nav {
 /* MAIN */
 /* Hero Section */
 .hero-section {
-    padding-top: 188px;
-    padding-bottom: 188px;
-    background-color: var(--NAVY-BLUE);
+    /* background-color: var(--NAVY-BLUE); */
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
     background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)
@@ -150,12 +162,9 @@ nav {
         url(../images/hero-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
-}
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
+    background-size: auto;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 .hero-title {
     color: var(--WHITE);
@@ -182,6 +191,8 @@ nav {
     padding: 16px 32px;
     min-width: 169px;
     height: 56px;
+    transition-property: background-color;
+    transition-delay: 100ms;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -317,13 +328,54 @@ nav {
     background-color: var(--IRIS);
     border-radius: 50%;
     text-align: center;
+    transition-property: background-color;
+}
+.team-icon-link:hover,
+.team-icon-link:focus {
+    background-color: var(--OCEAN);
 }
 .team-icon-link svg {
     width: 16px;
     height: 16px;
 }
 
+/* Customers */
+.customers {
+    padding: 120px 0;
+}
+.customers-title {
+    text-align: center;
+    color: var(--NAVY-BLUE);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+.customer-link {
+    width: 168px;
+    height: 88px;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customer-link svg {
+    width: 104px;
+    height: 56px;
+}
+
 /* Footer */
+.footer-container {
+    display: flex;
+    gap: 120px;
+}
 .footer {
     background: var(--NAVY-BLUE);
     padding-top: 100px;
@@ -344,6 +396,18 @@ nav {
     letter-spacing: 0.02em;
     margin-top: 16px;
     width: 264px;
+}
+.footer-media-title {
+    color: var(--WHITE, #fff);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+.media-icons-list {
+    display: flex;
+    gap: 16px;
 }
 
 /* -- Portfolio -- */
@@ -372,6 +436,7 @@ nav {
     align-items: center;
     border-radius: 4px;
     border: 1px solid var(--CORNFLOWER, #e7e9fc);
+    transition-property: color, background-color;
 }
 .btn:hover,
 .btn:focus {
@@ -390,6 +455,8 @@ nav {
 .row-item {
     border: 1px solid var(--CORNFLOWER);
     width: calc((100% - 48px) / 3);
+    position: relative;
+    overflow: hidden;
 }
 .row-item-info {
     padding: 32px 16px;
@@ -411,4 +478,28 @@ nav {
     font-weight: 400;
     line-height: 1.5; /* 150% */
     letter-spacing: 0.02em;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 300px;
+    background-color: var(--IRIS);
+    transform: translateY(-100%);
+    transition: transform 300ms ease-in-out;
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+.row-item:hover .overlay {
+    transform: translateY(0);
+}
+.overlay p {
+    width: 296px;
+    color: var(--CLOUD);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.32px;
 }
