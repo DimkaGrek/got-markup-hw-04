@@ -233,10 +233,10 @@ nav {
     margin-bottom: 8px;
     border-radius: 4px;
 }
-.mastery-icon svg {
+/* .mastery-icon svg {
     width: 64px;
     height: 64px;
-}
+} */
 .mastery-title {
     color: var(--NAVY-BLUE);
     font-size: 20px;
