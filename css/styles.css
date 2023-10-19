@@ -524,7 +524,7 @@ nav {
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .row-item-link:hover .overlay p {
-    transform: translateY(0);
+    transform: translateY(0%);
 }
 .overlay p {
     color: var(--CLOUD);
