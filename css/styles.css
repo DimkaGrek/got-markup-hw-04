@@ -7,6 +7,7 @@
     --WHITE: #fff;
     --OCEAN: #404bbf;
     --LIGHT-SLATE: #8e8f99;
+    --GREEN: #31d0aa;
 }
 
 body {
@@ -331,7 +332,8 @@ nav {
     justify-content: center;
     gap: 24px;
 }
-.team-icon-link {
+.team-icon-link,
+.footer-icon-link {
     width: 40px;
     height: 40px;
     display: flex;
@@ -429,6 +431,10 @@ nav {
 .media-icons-list {
     display: flex;
     gap: 16px;
+}
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+    background-color: var(--GREEN);
 }
 
 /* -- Portfolio -- */
